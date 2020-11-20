@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'GothamProBold';
+    src: local("GothamPro-Bold"),
+        url('../font/GothamPro-Bold.woff') format("woff"),
+        url('../font/GothamPro-Bold.woff2') format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: local("Montserrat-Bold"),
+        url('../font/Montserrat-Bold.woff') format("woff"),
+        url('../font/Montserrat-Bold.woff2') format("woff2");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: local("Montserrat-SemiBold"),
+        url('../font/Montserrat-SemiBold.woff') format("woff"),
+        url('../font/Montserrat-SemiBold.woff2') format("woff2");
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F0F1F2;
+    color: #33312C;
+    
+}
+
+h2 {
+    font-family: 'GothamProBold';
+    color: #000000;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1169px;
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 100px 0;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.bookmaker {
+
+    // .bookmaker__title
+
+    &__title {
+        // margin-bottom: 23px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    // .bookmaker__list
+
+    &__list {
+        flex-direction: column;
+    }
+
+    // .bookmaker__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 18px 30px 18px 38px;
+        box-sizing: border-box;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    // .bookmaker__number
+
+    &__number {
+        font-family: 'MontserratSemiBold';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #3E3B4A;
+        margin-right: 38px;
+    }
+
+    // .bookmaker__name
+
+    &__name {
+        text-transform: none;
+        font-family: 'MontserratBold';
+        font-size: 16px;
+        margin-left: auto;
+        width: 86px;
+        display: inline-block;
+        text-align: left;
+        margin-right: 29px;
+    }
+
+    // .bookmaker__rating
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        margin-right: 63px;
+        cursor: pointer;
+    }
+
+    // .bookmaker__star
+
+    &__star {
+        width: 21px;
+        height: 21px;
+        fill: #C1C0CD;
+
+        &_active {
+            fill: #F0BB65;
+        }
+
+        &:not(:last-child) {
+            margin-right: 7px;
+        }
+    }
+
+    // .bookmaker__bonus
+
+    &__bonus {
+        display: flex;
+        align-items: center;
+        margin-right: 165px;
+    }
+
+    // .bookmaker__prize
+
+    &__prize {
+        width: 19px;
+        height: 19px;
+        fill: #F0BB65;
+        margin-right: 14px;
+    }
+
+    // .bookmaker__price
+
+    &__price {
+        font-family: 'MontserratBold';
+        font-size: 16px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background: transparent;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-family: 'MontserratSemiBold';
+        font-weight: 600;
+        font-size: 14px;
+        color: #191925;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    // .bookmaker__reviews
+
+    &__reviews {
+        width: 130px;
+        height: 35px;
+        border: 1px solid #67BC6D;
+        margin-right: 23px;
+    }
+
+    // .bookmaker__overview
+
+    &__overview {
+        width: 87px;
+        height: 35px;
+        border: 1px solid #DADADA;
+        margin-right: 23px;
+    }
+
+    // .bookmaker__link
+
+    &__link {
+        width: 107px;
+        height: 35px;
+        background: #E2455A;
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: 'GothamProBold';
+  src: local("GothamPro-Bold"), url("../font/GothamPro-Bold.woff") format("woff"), url("../font/GothamPro-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: local("Montserrat-Bold"), url("../font/Montserrat-Bold.woff") format("woff"), url("../font/Montserrat-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'MontserratSemiBold';
+  src: local("Montserrat-SemiBold"), url("../font/Montserrat-SemiBold.woff") format("woff"), url("../font/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F0F1F2;
+  color: #33312C;
+}
+
+h2 {
+  font-family: 'GothamProBold';
+  color: #000000;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1169px;
+  width: 90%;
+  margin: auto;
+  text-transform: uppercase;
+  padding: 100px 0;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.bookmaker__title {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.bookmaker__list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bookmaker__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 18px 30px 18px 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bookmaker__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.bookmaker__number {
+  font-family: 'MontserratSemiBold';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #3E3B4A;
+  margin-right: 38px;
+}
+
+.bookmaker__name {
+  text-transform: none;
+  font-family: 'MontserratBold';
+  font-size: 16px;
+  margin-left: auto;
+  width: 86px;
+  display: inline-block;
+  text-align: left;
+  margin-right: 29px;
+}
+
+.bookmaker__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 63px;
+  cursor: pointer;
+}
+
+.bookmaker__star {
+  width: 21px;
+  height: 21px;
+  fill: #C1C0CD;
+}
+
+.bookmaker__star_active {
+  fill: #F0BB65;
+}
+
+.bookmaker__star:not(:last-child) {
+  margin-right: 7px;
+}
+
+.bookmaker__bonus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 165px;
+}
+
+.bookmaker__prize {
+  width: 19px;
+  height: 19px;
+  fill: #F0BB65;
+  margin-right: 14px;
+}
+
+.bookmaker__price {
+  font-family: 'MontserratBold';
+  font-size: 16px;
+}
+
+.bookmaker__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'MontserratSemiBold';
+  font-weight: 600;
+  font-size: 14px;
+  color: #191925;
+}
+
+.bookmaker__btn:hover {
+  opacity: 0.7;
+}
+
+.bookmaker__reviews {
+  width: 130px;
+  height: 35px;
+  border: 1px solid #67BC6D;
+  margin-right: 23px;
+}
+
+.bookmaker__overview {
+  width: 87px;
+  height: 35px;
+  border: 1px solid #DADADA;
+  margin-right: 23px;
+}
+
+.bookmaker__link {
+  width: 107px;
+  height: 35px;
+  background: #E2455A;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
