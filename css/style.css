@@ -145,6 +145,7 @@ button {
   line-height: 24px;
   color: #3E3B4A;
   margin-right: 38px;
+  cursor: default;
 }
 
 .bookmaker__name {
@@ -166,7 +167,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 63px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .bookmaker__star {
@@ -191,6 +192,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 165px;
+  cursor: default;
 }
 
 .bookmaker__prize {
