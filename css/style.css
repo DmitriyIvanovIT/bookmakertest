@@ -61,6 +61,8 @@ button {
 
 .title {
   text-transform: uppercase;
+  font-size: 20px;
+  color: #000000;
 }
 
 .plagination-btn {
@@ -106,10 +108,6 @@ button {
   font-size: 14px;
   text-transform: uppercase;
   color: #191925;
-}
-
-.bookmaker__title {
-  font-size: 20px;
 }
 
 .bookmaker__list {
@@ -251,5 +249,274 @@ button {
   height: 35px;
   background: #E2455A;
   color: #FFFFFF;
+}
+
+.forecasts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 88px;
+}
+
+.forecasts__plagination {
+  margin-top: 7px;
+}
+
+.last-forecasts {
+  -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
+}
+
+.last-forecasts__title {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.last-forecasts__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.last-forecasts__card {
+  width: 380px;
+  height: 225px;
+  padding: 13px;
+  padding-top: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 12px 39px rgba(0, 0, 0, 0.07);
+  border-radius: 7px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.card__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.card__body::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #F5F5F6;
+  bottom: 0;
+  left: 0;
+}
+
+.card__disciplines {
+  font-family: 'MontserratBold';
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 24px;
+  color: #5A3EC4;
+}
+
+.card__name {
+  font-family: 'MontserratSemiBold';
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: none;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__match {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user__avatar {
+  width: 38px;
+  height: 38px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 10px;
+}
+
+.user__name {
+  font-family: 'MontserratSemiBold';
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+  color: #C1C0CD;
+}
+
+.coefficient {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.coefficient__count {
+  font-family: 'MontserratSemiBold';
+  font-size: 18px;
+  color: #403E51;
+  text-transform: none;
+}
+
+.coefficient__title {
+  font-family: 'MontserratSemiBold';
+  font-size: 11px;
+  color: #C1C0CD;
+}
+
+.club {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.club:last-child {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.club:last-child img {
+  margin-left: 9px;
+}
+
+.club__emblem {
+  width: 35px;
+  height: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.club__name {
+  font-family: 'MontserratSemiBold';
+  font-size: 16px;
+  line-height: 24px;
+  color: #403E51;
+  text-transform: none;
+}
+
+.match-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.match-time__day {
+  font-family: 'MontserratSemiBold';
+  font-size: 11px;
+  color: #C1C0CD;
+}
+
+.match-time__hour {
+  font-family: 'MontserratSemiBold';
+  font-size: 18px;
+  color: #403E51;
+}
+
+.sports-disciplines {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.sports-disciplines__list {
+  margin: 0;
+  margin-bottom: 32px;
+  margin-top: 4px;
+}
+
+.sports-disciplines__name {
+  font-family: 'GothamProBold';
+  font-size: 16px;
+  color: #7A798A;
+  margin-left: 13px;
+  cursor: pointer;
+}
+
+.sports-disciplines__name_active {
+  color: #5A3EC4;
+}
+
+.promo {
+  width: 383px;
+  height: 466px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
