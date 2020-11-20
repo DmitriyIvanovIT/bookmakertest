@@ -46,6 +46,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
 .wrapper {
   max-width: 1169px;
   width: 90%;
@@ -58,12 +63,57 @@ a {
   text-transform: uppercase;
 }
 
+.plagination-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 178px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.plagination-btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.plagination-btn:hover {
+  opacity: 0.7;
+}
+
+.plagination-btn__text {
+  font-family: 'GothamProBold';
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #191925;
+}
+
 .bookmaker__title {
   font-size: 20px;
-  line-height: 25px;
 }
 
 .bookmaker__list {
+  margin: 23px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
